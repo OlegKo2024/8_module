@@ -1,7 +1,9 @@
 print('Задание "Программистам всё можно"')
 
+from typing import Union
+
 print('Вариант 1')
-def add_everything_up(a: (int, float, str), b: (int, float, str)):
+def add_everything_up(a: Union[int, float, str], b: Union[int, float, str]):
     try:
         summa = round(a + b, 3)
         return summa
@@ -15,7 +17,7 @@ print(add_everything_up('яблоко', 4215))
 print(add_everything_up(123.456, 7))
 
 print('Вариант 2')
-def add_everything_up(a: (int, float, str), b: (int, float, str)):
+def add_everything_up(a: Union[int, float, str], b: Union[int, float, str]):
     try:
         summa = round(a + b, 3)
         return summa
